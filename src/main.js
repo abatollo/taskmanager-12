@@ -29,5 +29,10 @@ const createSiteMenuTemplate = () => {
       <label for="control__statistic" class="control__label"
         >STATISTICS</label
       >
-    </section>`)
+    </section>`
+  );
+};
+
+const render = (container, template, place) => {
+  container.insertAdjacentHTML(place, template);
 };
